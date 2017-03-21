@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"
+      encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:sf_sample.Views"
+             xmlns:xForms="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True"
+             x:Class="sf_sample.Views.DashboardView">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal"
+                     BackgroundColor="#F4511E"
+                     HeightRequest="48">
+            <Label FontSize="24"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   TextColor="White"
+                   Text="Syncfusion components demo" />
+        </StackLayout>
+        <xForms:SfListView ItemSize="100"
+                           SelectionMode="None"
+                           ItemsSource="{Binding MenuItemCollection}">
+            <xForms:SfListView.LayoutManager>
+                <xForms:GridLayout />
+            </xForms:SfListView.LayoutManager>
+            <xForms:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Button Command="{Binding}"
+                                ContentLayout="Top"
+                                Text="{Binding Text}"
+                                Image="{Binding Image}" />
+                    </Grid>
+                </DataTemplate>
+            </xForms:SfListView.ItemTemplate>
+        </xForms:SfListView>
+    </StackLayout>
+</ContentPage>
