@@ -8,6 +8,12 @@
         <StackLayout Orientation="Horizontal"
                      BackgroundColor="#F4511E"
                      HeightRequest="48">
+            <Image BindingContext="{Binding NavigateBackCommand}"
+                   Source="{Binding Image}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding}" />
+                </Image.GestureRecognizers>
+            </Image>
             <Label FontSize="24"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"

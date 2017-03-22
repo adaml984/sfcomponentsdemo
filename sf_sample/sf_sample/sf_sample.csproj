@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Commands\CustomCommand.cs" />
+    <Compile Include="Model\Status.cs" />
     <Compile Include="ViewModels\AutoCompleteViewModel.cs" />
     <Compile Include="ViewModels\BaseNavigableViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
@@ -132,8 +133,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Attributes\" />
     <Folder Include="Converters\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

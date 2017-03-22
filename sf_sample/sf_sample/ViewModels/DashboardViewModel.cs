@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Prism.Navigation;
 using sf_sample.Commands;
+using sf_sample.Views;
 using Xamarin.Forms;
 
 namespace sf_sample.ViewModels
@@ -29,31 +30,44 @@ namespace sf_sample.ViewModels
                 new CustomCommand(NavigateToDataGridViewMethod)
                 {
                     Image = ImageSource.FromFile("grid.png"),
-                    Text="SfDataGrid"
-                },
-                new CustomCommand(NavigateToChartViewMethod)
-                {
-                    Image = ImageSource.FromFile("chart.png"),
-                    Text="SfChart"
+                    Text = "SfDataGrid"
                 },
                 new CustomCommand(NavigateToAutoCompleteViewMethod)
                 {
                     Image = ImageSource.FromFile("textbox.png"),
-                    Text="SfAutoComplete"
+                    Text = "SfAutoComplete"
+                },
+                new CustomCommand(NavigateToChartViewMethod)
+                {
+                    Image = ImageSource.FromFile("chart.png"),
+                    Text = "SfCartesianChart"
+                },
+                new CustomCommand(NavigateToChartViewMethod)
+                {
+                    Image = ImageSource.FromFile("chartpie.png"),
+                    Text = "SfPieChart"
+                },
+                new CustomCommand(NavigateToChartViewMethod)
+                {
+                    Image = ImageSource.FromFile("chartbar.png"),
+                    Text = "SfBarChart"
                 }
             };
         }
 
         private async Task NavigateToAutoCompleteViewMethod()
         {
-            await NavigationService.NavigateAsync(Views.AutoCompleteView.NavigationId);
+            await NavigationService.NavigateAsync(AutoCompleteView.NavigationId);
         }
 
-        private async Task NavigateToDataGridViewMethod() { await NavigationService.NavigateAsync(Views.DataGridView.NavigationId); }
+        private async Task NavigateToDataGridViewMethod()
+        {
+            await NavigationService.NavigateAsync(DataGridView.NavigationId);
+        }
 
         private async Task NavigateToChartViewMethod()
         {
-            await NavigationService.NavigateAsync(Views.ChartView.NavigationId);
+            await NavigationService.NavigateAsync(ChartView.NavigationId);
         }
     }
 }

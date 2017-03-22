@@ -111,6 +111,8 @@
     <EmbeddedResource Include="Assets\chart.png" />
     <EmbeddedResource Include="Assets\grid.png" />
     <EmbeddedResource Include="Assets\textbox.png" />
+    <Content Include="Assets\chartbar.png" />
+    <Content Include="Assets\chartpie.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-100.png" />
     <Content Include="Assets\LockScreenLogo.scale-125.png" />

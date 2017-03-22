@@ -10,16 +10,12 @@ namespace sf_sample.Commands
         public CustomCommand(Action executeMethod) : base(executeMethod) { }
 
         public CustomCommand(Action executeMethod, Func<bool> canExecuteMethod)
-            : base(executeMethod, canExecuteMethod)
-        {
-        }
+            : base(executeMethod, canExecuteMethod) { }
 
         public CustomCommand(Func<Task> executeMethod) : base(executeMethod) { }
 
         public CustomCommand(Func<Task> executeMethod, Func<bool> canExecuteMethod)
-            : base(executeMethod, canExecuteMethod)
-        {
-        }
+            : base(executeMethod, canExecuteMethod) { }
 
         public ImageSource Image { get; set; }
         public string Text { get; set; }
