@@ -4,11 +4,13 @@ using Prism.Navigation;
 using sf_sample.Commands;
 using sf_sample.Views;
 using Xamarin.Forms;
+using ListView = sf_sample.Views.ListView;
 
 namespace sf_sample.ViewModels
 {
     public class DashboardViewModel : BaseNavigableViewModel
     {
+        private bool _executing;
         private ObservableCollection<CustomCommand> _menuItemCollection;
 
         public DashboardViewModel(INavigationService navigationService)
@@ -60,24 +62,44 @@ namespace sf_sample.ViewModels
             };
         }
 
-        private async Task NavigateToAutoCompleteViewMethod()
+        private async void NavigateToAutoCompleteViewMethod()
         {
+            if (_executing)
+                return;
+            _executing = true;
             await NavigationService.NavigateAsync(AutoCompleteView.NavigationId);
+            await Task.Delay(200);
+            _executing = false;
         }
 
-        private async Task NavigateToDataGridViewMethod()
+        private async void NavigateToDataGridViewMethod()
         {
+            if (_executing)
+                return;
+            _executing = true;
             await NavigationService.NavigateAsync(DataGridView.NavigationId);
+            await Task.Delay(200);
+            _executing = false;
         }
 
-        private async Task NavigateToChartViewMethod()
+        private async void NavigateToChartViewMethod()
         {
+            if (_executing)
+                return;
+            _executing = true;
             await NavigationService.NavigateAsync(ChartView.NavigationId);
+            await Task.Delay(200);
+            _executing = false;
         }
 
-        private async Task NavigateToListViewMethod()
+        private async void NavigateToListViewMethod()
         {
-            await NavigationService.NavigateAsync(Views.ListView.NavigationId);
+            if (_executing)
+                return;
+            _executing = true;
+            await NavigationService.NavigateAsync(ListView.NavigationId);
+            await Task.Delay(200);
+            _executing = false;
         }
     }
 }

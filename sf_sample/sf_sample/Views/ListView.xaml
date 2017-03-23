@@ -1,9 +1,7 @@
-﻿<?xml version="1.0"
-      encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="sf_sample.Views.ChartView">
+             x:Class="sf_sample.Views.ListView">
     <StackLayout>
         <Grid BackgroundColor="#F4511E"
               HeightRequest="48">
@@ -11,6 +9,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
@@ -27,10 +26,18 @@
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
-                   Text="SfChart" />
+                   Text="SfDataGrid" />
 
             <Image Grid.Column="3"
-                   BindingContext="{Binding OpenConfigurationCommand}"
+                   BindingContext="{Binding EditItemCommand}"
+                   Source="{Binding Image}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding}" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Grid.Column="4"
+                   BindingContext="{Binding DeleteItemCommand}"
                    Source="{Binding Image}">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding}" />

@@ -5,20 +5,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="sf_sample.Views.AutoCompleteView">
     <StackLayout>
-        <StackLayout Orientation="Horizontal"
-                     BackgroundColor="#F4511E"
-                     HeightRequest="48">
-            <Image BindingContext="{Binding NavigateBackCommand}"
+        <Grid BackgroundColor="#F4511E"
+              HeightRequest="48">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0"
+                   BindingContext="{Binding NavigateBackCommand}"
                    Source="{Binding Image}">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding}" />
                 </Image.GestureRecognizers>
             </Image>
-            <Label FontSize="24"
+
+            <Label Grid.Column="1"
+                   FontSize="24"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
-                   Text="SfAutoComplete" />
-        </StackLayout>
+                   Text="SfAutocomplete" />
+
+            <Image Grid.Column="3"
+                   BindingContext="{Binding OpenConfigurationCommand}"
+                   Source="{Binding Image}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding}" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
     </StackLayout>
 </ContentPage>

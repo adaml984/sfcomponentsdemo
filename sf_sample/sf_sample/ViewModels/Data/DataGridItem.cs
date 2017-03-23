@@ -1,65 +1,20 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 
 namespace sf_sample.ViewModels
 {
-    public class DataGridItem : INotifyPropertyChanged
+    public class DataGridItem : BaseViewModel
     {
         private DateTime _dt;
-        private string _firtName;
+        private string _firstName;
         private int _id;
         private string _lastName;
 
-        public int Id
-        {
-            get { return _id; }
-            set
-            {
-                _id = value;
-                OnPropertyChanged();
-            }
-        }
+        public int Id { get { return _id; } set { SetProperty(ref _id, value); } }
 
-        public DateTime Dt
-        {
-            get { return _dt; }
-            set
-            {
-                _dt = value;
-                OnPropertyChanged();
-            }
-        }
+        public DateTime Dt { get { return _dt; } set { SetProperty(ref _dt, value); } }
 
-        public string FirstName
-        {
-            get { return _firtName; }
-            set
-            {
-                _firtName = value;
-                OnPropertyChanged();
-            }
-        }
+        public string FirstName { get { return _firstName; } set { SetProperty(ref _firstName, value); } }
 
-        public string LastName
-        {
-            get { return _lastName; }
-            set
-            {
-                _lastName = value;
-                OnPropertyChanged();
-            }
-        }
-
-        #region INotifyPropertyChanged Members
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        #endregion
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        public string LastName { get { return _lastName; } set { SetProperty(ref _lastName, value); } }
     }
 }

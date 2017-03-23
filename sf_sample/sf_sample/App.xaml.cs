@@ -1,5 +1,8 @@
-﻿using Prism.Unity;
+﻿using Microsoft.Practices.Unity;
+using Prism.Unity;
+using sf_sample.ViewModels;
 using sf_sample.Views;
+using sf_sample.Views.Popups;
 
 namespace sf_sample
 {
@@ -22,6 +25,7 @@ namespace sf_sample
             Container.RegisterTypeForNavigation<AutoCompleteView>(AutoCompleteView.NavigationId);
             Container.RegisterTypeForNavigation<ChartView>(ChartView.NavigationId);
             Container.RegisterTypeForNavigation<ListView>(ListView.NavigationId);
+            Container.RegisterTypeForNavigation<AutoCompleteConfigPopup>(AutoCompleteConfigPopup.NavigationId);
         }
 
         #endregion
