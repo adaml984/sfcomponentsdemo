@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"
+      encoding="utf-8" ?>
+
+<popups:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                  xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  mvvm:ViewModelLocator.AutowireViewModel="True"
+                  Padding="25"
+                  x:Class="sf_sample.Views.Popups.AutoCompleteConfigPopupView">
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Padding="0"
+                 Margin="0">
+        <Frame Margin="0"
+               Padding="2"
+               BackgroundColor="#F4511E">
+            <StackLayout Padding="5"
+                         Margin="2"
+                         BackgroundColor="White"
+                         Orientation="Vertical">
+                <Label Text="To jest konfiguracja" />
+                <Label Text="To jest konfiguracja2" />
+                <Label Text="To jest konfiguracja3" />
+                <Label Text="To jest konfiguracja4" />
+                <Label Text="To jest konfiguracja5" />
+                <Label Text="To jest konfiguracja6" />
+                <Label Text="To jest konfiguracja7" />
+                <Label Text="To jest konfiguracja8" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</popups:PopupPage>
