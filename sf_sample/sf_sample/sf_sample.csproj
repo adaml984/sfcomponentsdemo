@@ -67,8 +67,8 @@
     <Compile Include="Views\ListView.xaml.cs">
       <DependentUpon>ListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Popups\AutoCompleteConfigPopup.xaml.cs">
-      <DependentUpon>AutoCompleteConfigPopup.xaml</DependentUpon>
+    <Compile Include="Views\Popups\AutoCompleteConfigPopupView.xaml.cs">
+      <DependentUpon>AutoCompleteConfigPopupView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +165,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Popups\AutoCompleteConfigPopup.xaml">
+    <EmbeddedResource Include="Views\Popups\AutoCompleteConfigPopupView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

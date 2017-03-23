@@ -16,7 +16,7 @@ namespace sf_sample.ViewModels
         private void CreateCommands()
         {
             OpenConfigurationCommand = new CustomCommand(
-                    async () => { await NavigationService.PushPopupPageAsync(AutoCompleteConfigPopup.NavigationId); })
+                    async () => { await NavigationService.PushPopupPageAsync(AutoCompleteConfigPopupView.NavigationId); })
                 {Image = ImageSource.FromFile("settings.png")};
         }
     }

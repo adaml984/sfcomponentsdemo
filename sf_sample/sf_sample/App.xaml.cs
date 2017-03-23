@@ -25,7 +25,7 @@ namespace sf_sample
             Container.RegisterTypeForNavigation<AutoCompleteView>(AutoCompleteView.NavigationId);
             Container.RegisterTypeForNavigation<ChartView>(ChartView.NavigationId);
             Container.RegisterTypeForNavigation<ListView>(ListView.NavigationId);
-            Container.RegisterTypeForNavigation<AutoCompleteConfigPopup>(AutoCompleteConfigPopup.NavigationId);
+            Container.RegisterTypeForNavigation<AutoCompleteConfigPopupView>(AutoCompleteConfigPopupView.NavigationId);
         }
 
         #endregion
