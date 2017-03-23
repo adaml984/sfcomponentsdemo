@@ -39,7 +39,7 @@ namespace sf_sample.ViewModels
             Items = new ObservableCollection<DataGridItem>();
             for (var i = 0; i < 10; i++)
             {
-                Items.Add(new DataGridItem() {Id = i, Dt = thisMonth, FirstName = "A", LastName = "B"});
+                Items.Add(new DataGridItem() {Id = i, FirstName = "A", LastName = "B"});
                 thisMonth = thisMonth.AddDays(1);
             }
             //return tmpCollection;

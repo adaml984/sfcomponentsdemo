@@ -47,9 +47,10 @@
                 </Image.GestureRecognizers>
             </Image>
         </Grid>
-        
-        <xForms:SfDataGrid x:Name="dataGrid"
-                               AutoGenerateColumns="True"
-                               ItemsSource="{Binding Items}" />
+
+        <xForms:SfDataGrid x:Name="dataGrid" ColumnSizer="Star"
+                           AutoGenerateColumns="True"
+                           ItemsSource="{Binding Items}"
+                           />
     </StackLayout>
 </ContentPage>
