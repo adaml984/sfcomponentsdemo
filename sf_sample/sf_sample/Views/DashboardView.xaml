@@ -8,16 +8,16 @@
              xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              mvvm:ViewModelLocator.AutowireViewModel="True"
              x:Class="sf_sample.Views.DashboardView">
-
     <StackLayout>
         <StackLayout Orientation="Horizontal"
                      BackgroundColor="#F4511E"
                      HeightRequest="48">
+            <Image Source="hamburger.png"/>
             <Label FontSize="24"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
-                   Text="Syncfusion components demo" />
+                   Text="Syncfusion demo" />
         </StackLayout>
         <xForms:SfListView ItemSize="100"
                            SelectionMode="None"

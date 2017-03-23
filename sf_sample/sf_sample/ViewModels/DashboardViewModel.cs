@@ -32,6 +32,11 @@ namespace sf_sample.ViewModels
                     Image = ImageSource.FromFile("grid.png"),
                     Text = "SfDataGrid"
                 },
+                new CustomCommand(NavigateToListViewMethod)
+                {
+                    Image = ImageSource.FromFile("list.png"),
+                    Text = "SfListView"
+                },
                 new CustomCommand(NavigateToAutoCompleteViewMethod)
                 {
                     Image = ImageSource.FromFile("textbox.png"),
@@ -68,6 +73,11 @@ namespace sf_sample.ViewModels
         private async Task NavigateToChartViewMethod()
         {
             await NavigationService.NavigateAsync(ChartView.NavigationId);
+        }
+
+        private async Task NavigateToListViewMethod()
+        {
+            await NavigationService.NavigateAsync(Views.ListView.NavigationId);
         }
     }
 }

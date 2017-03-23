@@ -8,7 +8,6 @@ namespace sf_sample
         public App()
         {
             InitializeComponent();
-
             MainPage = new DashboardView();
         }
 
@@ -22,6 +21,7 @@ namespace sf_sample
             Container.RegisterTypeForNavigation<DataGridView>(DataGridView.NavigationId);
             Container.RegisterTypeForNavigation<AutoCompleteView>(AutoCompleteView.NavigationId);
             Container.RegisterTypeForNavigation<ChartView>(ChartView.NavigationId);
+            Container.RegisterTypeForNavigation<ListView>(ListView.NavigationId);
         }
 
         #endregion

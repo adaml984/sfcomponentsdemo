@@ -3,24 +3,53 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
              x:Class="sf_sample.Views.DataGridView">
-    <StackLayout>
-        <StackLayout Orientation="Horizontal"
-                     BackgroundColor="#F4511E"
-                     HeightRequest="48">
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Grid BackgroundColor="#F4511E"
+              HeightRequest="48">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
 
-            <Image BindingContext="{Binding NavigateBackCommand}"
+            <Image Grid.Column="0"
+                   BindingContext="{Binding NavigateBackCommand}"
                    Source="{Binding Image}">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding}" />
                 </Image.GestureRecognizers>
             </Image>
 
-            <Label FontSize="24"
+            <Label Grid.Column="1"
+                   FontSize="24"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
                    TextColor="White"
                    Text="SfDataGrid" />
-        </StackLayout>
+
+            <Image Grid.Column="3"
+                   BindingContext="{Binding EditItemCommand}"
+                   Source="{Binding Image}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding}" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Grid.Column="4"
+                   BindingContext="{Binding DeleteItemCommand}"
+                   Source="{Binding Image}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding}" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+        
+        <xForms:SfDataGrid x:Name="dataGrid"
+                               AutoGenerateColumns="True"
+                               ItemsSource="{Binding Items}" />
     </StackLayout>
 </ContentPage>

@@ -16,7 +16,7 @@ namespace sf_sample.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
+            
             Forms.Init(this, bundle);
             LoadApplication(new App());
         }
