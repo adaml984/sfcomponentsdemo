@@ -24,12 +24,10 @@ namespace sf_sample.ViewModels
         }
 
         public CustomCommand EditItemCommand { get; set; }
+
         public CustomCommand DeleteItemCommand { get; set; }
 
-        private void Init()
-        {
-            CreateTestData();
-        }
+        private void Init() { CreateTestData(); }
 
         //private Task<ObservableCollection<DataGridItem>> CreateTestData()
         private void CreateTestData()
