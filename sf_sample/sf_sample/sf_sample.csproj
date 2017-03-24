@@ -42,24 +42,23 @@
     <Compile Include="Helpers\TypeHelpers.cs" />
     <Compile Include="Model\Status.cs" />
     <Compile Include="ViewModels\AutoCompleteViewModel.cs" />
+    <Compile Include="ViewModels\BarChartViewModel.cs" />
     <Compile Include="ViewModels\BaseNavigableViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
-    <Compile Include="ViewModels\ChartViewModel.cs" />
+    <Compile Include="ViewModels\LinearChartViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\DataGridViewModel.cs" />
     <Compile Include="ViewModels\Data\ChartType.cs" />
     <Compile Include="ViewModels\Data\DataGridItem.cs" />
     <Compile Include="ViewModels\Data\ListItem.cs" />
     <Compile Include="ViewModels\ListViewModel.cs" />
+    <Compile Include="ViewModels\PieChartViewModel.cs" />
     <Compile Include="ViewModels\Popups\AutoCompleteConfigPopupViewModel.cs" />
     <Compile Include="Views\AutoCompleteView.xaml.cs">
       <DependentUpon>AutoCompleteView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BarChartView.xaml.cs">
       <DependentUpon>BarChartView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ChartView.xaml.cs">
-      <DependentUpon>ChartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DashboardView.xaml.cs">
       <DependentUpon>DashboardView.xaml</DependentUpon>
@@ -154,12 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\AutoCompleteView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\ChartView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
