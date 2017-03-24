@@ -48,9 +48,28 @@
             </Image>
         </Grid>
 
-        <xForms:SfDataGrid x:Name="dataGrid" ColumnSizer="Star"
-                           AutoGenerateColumns="True"
-                           ItemsSource="{Binding Items}"
-                           />
+        <xForms:SfDataGrid x:Name="dataGrid"
+                           ColumnSizer="Star"
+                           SelectedItem="{Binding SelectedItem}"
+                           AllowSorting="True"
+                           AllowTriStateSorting="True"
+                           AutoGenerateColumns="False"
+                           ItemsSource="{Binding Items}">
+            <xForms:SfDataGrid.Columns>
+                <xForms:GridTextColumn HeaderTextAlignment="Start"
+                                       HeaderText="Id"
+                                       MappingName="Id" />
+                <xForms:GridDateTimeColumn HeaderTextAlignment="Start"
+                                           HeaderText="Dt"
+                                           MappingName="Dt" />
+                <xForms:GridTextColumn HeaderTextAlignment="Center"
+                                       HeaderText="Imię"
+                                       MappingName="FirstName" />
+                <xForms:GridTextColumn HeaderTextAlignment="End"
+                                       HeaderText="Nazwisko"
+                                       MappingName="LastName" />
+            </xForms:SfDataGrid.Columns>
+        </xForms:SfDataGrid>
+
     </StackLayout>
 </ContentPage>

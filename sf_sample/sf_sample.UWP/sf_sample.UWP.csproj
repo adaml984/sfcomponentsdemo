@@ -163,20 +163,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.DataSource.Portable, Version=15.1451.0.33, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\syncfusion\Syncfusion.DataSource.Portable.dll</HintPath>
+    <Reference Include="Syncfusion.SfChart.XForms.UWP">
+      <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfChart.XForms.UWP.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.GridCommon.Portable, Version=15.1451.0.33, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\syncfusion\Syncfusion.GridCommon.Portable.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfListView.XForms, Version=15.1451.0.33, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\syncfusion\Syncfusion.SfListView.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.SfDataGrid.XForms.UWP">
+      <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfDataGrid.XForms.UWP.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfListView.XForms.UWP">
-      <HintPath>..\..\libs\syncfusion\Syncfusion.SfListView.XForms.UWP.dll</HintPath>
+      <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfListView.XForms.UWP.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

@@ -109,6 +109,9 @@
     <Reference Include="Syncfusion.GridCommon.Portable">
       <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.GridCommon.Portable.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms">
+      <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfChart.XForms.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.SfDataGrid.XForms">
       <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfDataGrid.XForms.dll</HintPath>
     </Reference>

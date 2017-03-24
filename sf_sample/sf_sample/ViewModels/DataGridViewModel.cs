@@ -11,6 +11,8 @@ namespace sf_sample.ViewModels
     {
         private ObservableCollection<DataGridItem> _items;
 
+        private DataGridItem _selectedItem;
+
         public DataGridViewModel(INavigationService navigationService) : base(navigationService)
         {
             CreateCommands();
@@ -21,6 +23,12 @@ namespace sf_sample.ViewModels
         {
             get { return _items; }
             set { SetProperty(ref _items, value); }
+        }
+
+        public DataGridItem SelectedItem
+        {
+            get { return _selectedItem; }
+            set { SetProperty(ref _selectedItem, value); }
         }
 
         public CustomCommand EditItemCommand { get; set; }
@@ -36,9 +44,9 @@ namespace sf_sample.ViewModels
                 {
                     var thisMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
                     var tmpCollection = new ObservableCollection<DataGridItem>();
-                    for (var i = 0; i < 10; i++)
+                    for (var i = 0; i < 100; i++)
                     {
-                        tmpCollection.Add(new DataGridItem() {Id = i, FirstName = "A", LastName = "B"});
+                        tmpCollection.Add(new DataGridItem() {Id = i, Dt = thisMonth, FirstName = "A", LastName = "B"});
                         thisMonth = thisMonth.AddDays(1);
                     }
                     return tmpCollection;
