@@ -92,10 +92,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\libs\syncfusion\android\Syncfusion.Linq.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfDataGrid.Android, Version=15.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfDataGrid.Android.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.SfDataGrid.XForms, Version=15.1451.0.37, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfDataGrid.XForms.dll</HintPath>
