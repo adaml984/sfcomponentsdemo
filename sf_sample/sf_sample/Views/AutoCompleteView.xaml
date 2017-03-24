@@ -3,6 +3,7 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xForms="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              x:Class="sf_sample.Views.AutoCompleteView">
     <StackLayout>
         <Grid BackgroundColor="#F4511E"
@@ -37,5 +38,6 @@
                 </Image.GestureRecognizers>
             </Image>
         </Grid>
+        <xForms:SfAutoComplete />
     </StackLayout>
 </ContentPage>

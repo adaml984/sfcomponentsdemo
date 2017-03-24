@@ -35,7 +35,9 @@ namespace sf_sample
             Container.RegisterTypeForNavigation<DashboardView>(typeof(DashboardView).GetNavigationId());
             Container.RegisterTypeForNavigation<DataGridView>(typeof(DataGridView).GetNavigationId());
             Container.RegisterTypeForNavigation<AutoCompleteView>(typeof(AutoCompleteView).GetNavigationId());
-            Container.RegisterTypeForNavigation<ChartView>(typeof(ChartView).GetNavigationId());
+            Container.RegisterTypeForNavigation<ChartView>(typeof(LinearChartView).GetNavigationId());
+            Container.RegisterTypeForNavigation<ChartView>(typeof(PieChartView).GetNavigationId());
+            Container.RegisterTypeForNavigation<ChartView>(typeof(BarChartView).GetNavigationId());
             Container.RegisterTypeForNavigation<ListView>(typeof(ListView).GetNavigationId());
             Container.RegisterTypeForNavigation<AutoCompleteConfigPopupView>(
                 typeof(AutoCompleteConfigPopupView).GetNavigationId());

@@ -41,17 +41,17 @@ namespace sf_sample.ViewModels
                     Image = ImageSource.FromFile("textbox.png"),
                     Text = "SfAutoComplete"
                 },
-                new CustomCommand(NavigateToChartViewMethod)
+                new CustomCommand(NavigateToLinearChartViewMethod)
                 {
                     Image = ImageSource.FromFile("chart.png"),
                     Text = "SfCartesianChart"
                 },
-                new CustomCommand(NavigateToChartViewMethod)
+                new CustomCommand(NavigateToPieChartViewMethod)
                 {
                     Image = ImageSource.FromFile("chartpie.png"),
                     Text = "SfPieChart"
                 },
-                new CustomCommand(NavigateToChartViewMethod)
+                new CustomCommand(NavigateToBarChartViewMethod)
                 {
                     Image = ImageSource.FromFile("chartbar.png"),
                     Text = "SfBarChart"
@@ -79,12 +79,32 @@ namespace sf_sample.ViewModels
             _executing = false;
         }
 
-        private async void NavigateToChartViewMethod()
+        private async void NavigateToLinearChartViewMethod()
         {
             if (_executing)
                 return;
             _executing = true;
-            await NavigationService.NavigateAsync(typeof(ChartView).GetNavigationId());
+            await NavigationService.NavigateAsync(typeof(LinearChartView).GetNavigationId());
+            await Task.Delay(200);
+            _executing = false;
+        }
+
+        private async void NavigateToBarChartViewMethod()
+        {
+            if (_executing)
+                return;
+            _executing = true;
+            await NavigationService.NavigateAsync(typeof(BarChartView).GetNavigationId());
+            await Task.Delay(200);
+            _executing = false;
+        }
+
+        private async void NavigateToPieChartViewMethod()
+        {
+            if (_executing)
+                return;
+            _executing = true;
+            await NavigationService.NavigateAsync(typeof(PieChartView).GetNavigationId());
             await Task.Delay(200);
             _executing = false;
         }

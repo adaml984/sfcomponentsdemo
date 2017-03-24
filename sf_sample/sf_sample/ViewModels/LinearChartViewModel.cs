@@ -4,9 +4,9 @@ using Xamarin.Forms;
 
 namespace sf_sample.ViewModels
 {
-    public class ChartViewModel : BaseNavigableViewModel
+    public class LinearChartViewModel : BaseNavigableViewModel
     {
-        public ChartViewModel(INavigationService navigationService) : base(navigationService) { CreateCommands(); }
+        public LinearChartViewModel(INavigationService navigationService) : base(navigationService) { CreateCommands(); }
 
         private void CreateCommands()
         {

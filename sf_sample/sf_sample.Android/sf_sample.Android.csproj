@@ -107,8 +107,12 @@
     <Reference Include="Syncfusion.SfAutoComplete.XForms.Android">
       <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfAutoComplete.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfChart.Android">
+    <Reference Include="Syncfusion.SfChart.Android, Version=15.1451.0.37, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfChart.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms">
+      <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfChart.XForms.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfChart.XForms.Android">
       <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfChart.XForms.Android.dll</HintPath>
