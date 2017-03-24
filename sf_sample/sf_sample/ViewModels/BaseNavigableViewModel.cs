@@ -9,13 +9,24 @@ namespace sf_sample.ViewModels
     /// </summary>
     public abstract class BaseNavigableViewModel : BaseViewModel, INavigationAware
     {
-        public BaseNavigableViewModel() { CreateNavigateBackCommand(); }
+        private BaseNavigableViewModel() { CreateNavigateBackCommand(); }
 
-        public INavigationService NavigationService { get; protected set; }
+        protected BaseNavigableViewModel(INavigationService navigationService) : this()
+        {
+            NavigationService = navigationService;
+        }
+
+        public INavigationService NavigationService { get; }
         public CustomCommand OpenConfigurationCommand { get; protected set; }
         public CustomCommand NavigateBackCommand { get; protected set; }
 
-        protected void CreateNavigateBackCommand()
+        #region Implementation of INavigatingAware
+
+        public void OnNavigatingTo(NavigationParameters parameters) { }
+
+        #endregion
+
+        private void CreateNavigateBackCommand()
         {
             NavigateBackCommand = new CustomCommand(
                     async () =>
@@ -29,15 +40,9 @@ namespace sf_sample.ViewModels
 
         #region Implementation of INavigatedAware
 
-        public void OnNavigatedFrom(NavigationParameters parameters) {  }
+        public void OnNavigatedFrom(NavigationParameters parameters) { }
 
-        public void OnNavigatedTo(NavigationParameters parameters) {  }
-
-        #endregion
-
-        #region Implementation of INavigatingAware
-
-        public void OnNavigatingTo(NavigationParameters parameters) {  }
+        public void OnNavigatedTo(NavigationParameters parameters) { }
 
         #endregion
     }

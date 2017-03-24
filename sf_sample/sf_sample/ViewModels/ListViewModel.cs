@@ -9,11 +9,7 @@ namespace sf_sample.ViewModels
     {
         private ObservableCollection<ListItem> _items;
 
-        public ListViewModel(INavigationService navigationService)
-        {
-            NavigationService = navigationService;
-            CreateCommands();
-        }
+        public ListViewModel(INavigationService navigationService) : base(navigationService) { CreateCommands(); }
 
         public ObservableCollection<ListItem> Items { get { return _items; } set { SetProperty(ref _items, value); } }
 

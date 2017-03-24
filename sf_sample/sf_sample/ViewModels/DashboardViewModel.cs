@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Prism.Navigation;
 using sf_sample.Commands;
+using sf_sample.Helpers;
 using sf_sample.Views;
 using Xamarin.Forms;
 using ListView = sf_sample.Views.ListView;
@@ -13,11 +14,7 @@ namespace sf_sample.ViewModels
         private bool _executing;
         private ObservableCollection<CustomCommand> _menuItemCollection;
 
-        public DashboardViewModel(INavigationService navigationService)
-        {
-            NavigationService = navigationService;
-            CreateCommands();
-        }
+        public DashboardViewModel(INavigationService navigationService) : base(navigationService) { CreateCommands(); }
 
         public ObservableCollection<CustomCommand> MenuItemCollection
         {
@@ -67,7 +64,7 @@ namespace sf_sample.ViewModels
             if (_executing)
                 return;
             _executing = true;
-            await NavigationService.NavigateAsync(AutoCompleteView.NavigationId);
+            await NavigationService.NavigateAsync(typeof(AutoCompleteView).GetNavigationId());
             await Task.Delay(200);
             _executing = false;
         }
@@ -77,7 +74,7 @@ namespace sf_sample.ViewModels
             if (_executing)
                 return;
             _executing = true;
-            await NavigationService.NavigateAsync(DataGridView.NavigationId);
+            await NavigationService.NavigateAsync(typeof(DataGridView).GetNavigationId());
             await Task.Delay(200);
             _executing = false;
         }
@@ -87,7 +84,7 @@ namespace sf_sample.ViewModels
             if (_executing)
                 return;
             _executing = true;
-            await NavigationService.NavigateAsync(ChartView.NavigationId);
+            await NavigationService.NavigateAsync(typeof(ChartView).GetNavigationId());
             await Task.Delay(200);
             _executing = false;
         }
@@ -97,7 +94,7 @@ namespace sf_sample.ViewModels
             if (_executing)
                 return;
             _executing = true;
-            await NavigationService.NavigateAsync(ListView.NavigationId);
+            await NavigationService.NavigateAsync(typeof(ListView).GetNavigationId());
             await Task.Delay(200);
             _executing = false;
         }

@@ -16462,20 +16462,20 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\adaml\\.nuget\\packages\\": {}
+    "C:\\Users\\adam.lamarz\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\!projekty\\sfcomponentsdemo\\sf_sample\\sf_sample.UWP\\sf_sample.UWP.csproj",
+      "projectUniqueName": "C:\\!sample\\sf_sample\\sf_sample\\sf_sample.UWP\\sf_sample.UWP.csproj",
       "projectName": "sf_sample.UWP",
-      "projectPath": "D:\\!projekty\\sfcomponentsdemo\\sf_sample\\sf_sample.UWP\\sf_sample.UWP.csproj",
-      "projectJsonPath": "D:\\!projekty\\sfcomponentsdemo\\sf_sample\\sf_sample.UWP\\project.json",
+      "projectPath": "C:\\!sample\\sf_sample\\sf_sample\\sf_sample.UWP\\sf_sample.UWP.csproj",
+      "projectJsonPath": "C:\\!sample\\sf_sample\\sf_sample\\sf_sample.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "D:\\!projekty\\sfcomponentsdemo\\sf_sample\\sf_sample\\sf_sample.csproj": {
-              "projectPath": "D:\\!projekty\\sfcomponentsdemo\\sf_sample\\sf_sample\\sf_sample.csproj"
+            "C:\\!sample\\sf_sample\\sf_sample\\sf_sample\\sf_sample.csproj": {
+              "projectPath": "C:\\!sample\\sf_sample\\sf_sample\\sf_sample\\sf_sample.csproj"
             }
           }
         }

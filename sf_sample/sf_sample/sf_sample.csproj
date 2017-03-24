@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Commands\CustomCommand.cs" />
+    <Compile Include="Helpers\TypeHelpers.cs" />
     <Compile Include="Model\Status.cs" />
     <Compile Include="ViewModels\AutoCompleteViewModel.cs" />
     <Compile Include="ViewModels\BaseNavigableViewModel.cs" />

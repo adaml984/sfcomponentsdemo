@@ -11,7 +11,6 @@ namespace sf_sample.Views
 {
     public partial class ChartView : ContentPage
     {
-        public const string NavigationId = "ChartView";
         public ChartView()
         {
             InitializeComponent();

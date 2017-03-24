@@ -10,9 +10,8 @@ namespace sf_sample.ViewModels
     {
         private ObservableCollection<DataGridItem> _items;
 
-        public DataGridViewModel(INavigationService navigationService)
+        public DataGridViewModel(INavigationService navigationService) : base(navigationService)
         {
-            NavigationService = navigationService;
             CreateCommands();
             Init();
         }

@@ -4,9 +4,6 @@ namespace sf_sample.ViewModels
 {
     public class AutoCompleteConfigPopupViewModel : BaseNavigableViewModel
     {
-        public AutoCompleteConfigPopupViewModel(INavigationService navigationService)
-        {
-            NavigationService = navigationService;
-        }
+        public AutoCompleteConfigPopupViewModel(INavigationService navigationService) : base(navigationService) { }
     }
 }

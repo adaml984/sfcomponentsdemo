@@ -11,7 +11,6 @@ namespace sf_sample.Views
 {
     public partial class ListView : ContentPage
     {
-        public const string NavigationId = "ListView";
         public ListView()
         {
             InitializeComponent();

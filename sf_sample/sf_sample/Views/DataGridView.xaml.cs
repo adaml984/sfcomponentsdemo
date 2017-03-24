@@ -6,8 +6,6 @@ namespace sf_sample.Views
 {
     public partial class DataGridView : ContentPage
     {
-        public const string NavigationId = "DataGridView";
-
         public DataGridView()
         {
             InitializeComponent();

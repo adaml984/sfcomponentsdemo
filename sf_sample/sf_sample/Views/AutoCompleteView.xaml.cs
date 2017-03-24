@@ -5,8 +5,6 @@ namespace sf_sample.Views
 {
     public partial class AutoCompleteView : ContentPage
     {
-        public const string NavigationId = "AutoCompleteView";
-
         public AutoCompleteView() { InitializeComponent(); }
     }
 }

@@ -6,11 +6,7 @@ namespace sf_sample.ViewModels
 {
     public class ChartViewModel : BaseNavigableViewModel
     {
-        public ChartViewModel(INavigationService navigationService)
-        {
-            NavigationService = navigationService;
-            CreateCommands();
-        }
+        public ChartViewModel(INavigationService navigationService) : base(navigationService) { CreateCommands(); }
 
         private void CreateCommands()
         {
