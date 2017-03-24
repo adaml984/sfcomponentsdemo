@@ -109,6 +109,9 @@
     <Reference Include="Syncfusion.GridCommon.Portable">
       <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.GridCommon.Portable.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfAutoComplete.XForms">
+      <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfAutoComplete.XForms.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.SfChart.XForms">
       <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfChart.XForms.dll</HintPath>
     </Reference>
