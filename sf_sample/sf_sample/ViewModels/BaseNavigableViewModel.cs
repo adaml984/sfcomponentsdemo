@@ -7,7 +7,7 @@ namespace sf_sample.ViewModels
     /// <summary>
     ///     BaseViewModel with navigation support
     /// </summary>
-    public abstract class BaseNavigableViewModel : BaseViewModel, INavigationAware
+    public abstract class BaseNavigableViewModel : BaseViewModel
     {
         private BaseNavigableViewModel() { CreateNavigateBackCommand(); }
 
@@ -19,13 +19,6 @@ namespace sf_sample.ViewModels
         public INavigationService NavigationService { get; }
         public CustomCommand OpenConfigurationCommand { get; protected set; }
         public CustomCommand NavigateBackCommand { get; protected set; }
-
-        #region Implementation of INavigatingAware
-
-        public void OnNavigatingTo(NavigationParameters parameters) { }
-
-        #endregion
-
         private void CreateNavigateBackCommand()
         {
             NavigateBackCommand = new CustomCommand(
@@ -37,13 +30,5 @@ namespace sf_sample.ViewModels
                     })
                 {Image = ImageSource.FromFile("navBack.png")};
         }
-
-        #region Implementation of INavigatedAware
-
-        public void OnNavigatedFrom(NavigationParameters parameters) { }
-
-        public void OnNavigatedTo(NavigationParameters parameters) { }
-
-        #endregion
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Prism.Navigation;
 using sf_sample.Commands;
 using Xamarin.Forms;
@@ -26,23 +27,22 @@ namespace sf_sample.ViewModels
 
         public CustomCommand DeleteItemCommand { get; set; }
 
-        private void Init() { CreateTestData(); }
+        private async void Init() { Items = await CreateTestData(); }
 
-        //private Task<ObservableCollection<DataGridItem>> CreateTestData()
-        private void CreateTestData()
+        private Task<ObservableCollection<DataGridItem>> CreateTestData()
         {
-            //return Task.Factory.StartNew(
-            //(() =>
-            //{
-            var thisMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            Items = new ObservableCollection<DataGridItem>();
-            for (var i = 0; i < 10; i++)
-            {
-                Items.Add(new DataGridItem() {Id = i, FirstName = "A", LastName = "B"});
-                thisMonth = thisMonth.AddDays(1);
-            }
-            //return tmpCollection;
-            // }));
+            return Task.Factory.StartNew(
+                () =>
+                {
+                    var thisMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+                    var tmpCollection = new ObservableCollection<DataGridItem>();
+                    for (var i = 0; i < 10; i++)
+                    {
+                        tmpCollection.Add(new DataGridItem() {Id = i, FirstName = "A", LastName = "B"});
+                        thisMonth = thisMonth.AddDays(1);
+                    }
+                    return tmpCollection;
+                });
         }
 
         private void CreateCommands()
