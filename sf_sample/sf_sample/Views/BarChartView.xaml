@@ -44,17 +44,32 @@
         </Grid>
         <xForms:SfChart Grid.Row="1">
             <xForms:SfChart.PrimaryAxis>
-                <xForms:NumericalAxis>
-                    <xForms:NumericalAxis Maximum="150"
-                                          Minimum="-150" />
-                </xForms:NumericalAxis>
+                <xForms:CategoryAxis>
+
+                    <xForms:CategoryAxis.Title>
+
+                        <xForms:ChartAxisTitle Text="Name" />
+
+                    </xForms:CategoryAxis.Title>
+
+                </xForms:CategoryAxis>
             </xForms:SfChart.PrimaryAxis>
             <xForms:SfChart.SecondaryAxis>
                 <xForms:NumericalAxis>
-                    <xForms:NumericalAxis Maximum="150"
-                                          Minimum="-150" />
+
+                    <xForms:NumericalAxis.Title>
+
+                        <xForms:ChartAxisTitle Text="Height (in cm)" />
+
+                    </xForms:NumericalAxis.Title>
+
                 </xForms:NumericalAxis>
             </xForms:SfChart.SecondaryAxis>
+            <xForms:SfChart.Series>
+                <xForms:ColumnSeries ItemsSource="{Binding Data}"
+                                     XBindingPath="Name"
+                                     YBindingPath="Height" />
+            </xForms:SfChart.Series>
         </xForms:SfChart>
     </Grid>
 </ContentPage>

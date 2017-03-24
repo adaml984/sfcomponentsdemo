@@ -52,7 +52,6 @@
                            ColumnSizer="Star"
                            SelectedItem="{Binding SelectedItem}"
                            AllowSorting="True"
-                           AllowTriStateSorting="True"
                            AutoGenerateColumns="False"
                            ItemsSource="{Binding Items}">
             <xForms:SfDataGrid.Columns>

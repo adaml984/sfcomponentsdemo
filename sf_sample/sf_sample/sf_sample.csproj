@@ -45,6 +45,7 @@
     <Compile Include="ViewModels\BarChartViewModel.cs" />
     <Compile Include="ViewModels\BaseNavigableViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Data\BarChartData.cs" />
     <Compile Include="ViewModels\LinearChartViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
     <Compile Include="ViewModels\DataGridViewModel.cs" />
