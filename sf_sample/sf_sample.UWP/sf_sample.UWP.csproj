@@ -163,11 +163,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Syncfusion.SfChart.UWP">
+      <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfChart.UWP.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.XForms">
+      <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfChart.XForms.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.SfChart.XForms.UWP">
       <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfChart.XForms.UWP.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfDataGrid.XForms.UWP">
       <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfDataGrid.XForms.UWP.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.XForms">
+      <HintPath>..\..\libs\syncfusion\pcl\Syncfusion.SfListView.XForms.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfListView.XForms.UWP">
       <HintPath>..\..\libs\syncfusion\uwp\Syncfusion.SfListView.XForms.UWP.dll</HintPath>
