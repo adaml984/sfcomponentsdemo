@@ -4,7 +4,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xForms="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
-             x:Class="sf_sample.Views.AutoCompleteView">
+             xmlns:customComponents="clr-namespace:sf_sample.CustomComponents;assembly=sf_sample"
+             x:Class="sf_sample.Views.AutoCompleteView"
+             x:Name="AutoCompletePage">
     <StackLayout>
         <Grid BackgroundColor="#F4511E"
               HeightRequest="48">
@@ -15,14 +17,8 @@
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Image Grid.Column="0"
-                   BindingContext="{Binding NavigateBackCommand}"
-                   Source="{Binding Image}">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding}" />
-                </Image.GestureRecognizers>
-            </Image>
-
+            <customComponents:ClickableImage Grid.Column="0"
+                                             ClickCommand="{Binding NavigateBackCommand}" />
             <Label Grid.Column="1"
                    FontSize="24"
                    HorizontalTextAlignment="Center"
