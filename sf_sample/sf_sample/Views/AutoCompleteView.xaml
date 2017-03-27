@@ -26,13 +26,8 @@
                    TextColor="White"
                    Text="SfAutocomplete" />
 
-            <Image Grid.Column="3"
-                   BindingContext="{Binding OpenConfigurationCommand}"
-                   Source="{Binding Image}">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding}" />
-                </Image.GestureRecognizers>
-            </Image>
+            <customComponents:ClickableImage Grid.Column="3"
+                                             ClickCommand="{Binding OpenConfigurationCommand}" />
         </Grid>
         <xForms:SfAutoComplete />
     </StackLayout>
