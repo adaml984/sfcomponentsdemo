@@ -1,0 +1,10 @@
+# Build and Release Folders
+bin/
+obj/
+bin/debug/
+bin/release/
+obj/debug/
+obj/release/
+packages/
+
+
