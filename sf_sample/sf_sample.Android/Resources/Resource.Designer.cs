@@ -5143,6 +5143,9 @@ namespace sf_sample.Droid
 			// aapt resource value: 0x7f060010
 			public const int abc_text_size_title_material_toolbar = 2131099664;
 			
+			// aapt resource value: 0x7f060074
+			public const int button_font_size = 2131099764;
+			
 			// aapt resource value: 0x7f060009
 			public const int cardview_compat_inset_shadow = 2131099657;
 			
@@ -5244,6 +5247,9 @@ namespace sf_sample.Droid
 			
 			// aapt resource value: 0x7f060050
 			public const int disabled_alpha_material_light = 2131099728;
+			
+			// aapt resource value: 0x7f060075
+			public const int font_size = 2131099765;
 			
 			// aapt resource value: 0x7f060051
 			public const int highlight_alpha_material_colored = 2131099729;
@@ -5810,8 +5816,8 @@ namespace sf_sample.Droid
 			// aapt resource value: 0x7f0200a8
 			public const int navBack = 2130837672;
 			
-			// aapt resource value: 0x7f0200ae
-			public const int notification_template_icon_bg = 2130837678;
+			// aapt resource value: 0x7f0200af
+			public const int notification_template_icon_bg = 2130837679;
 			
 			// aapt resource value: 0x7f0200a9
 			public const int pencil = 2130837673;
@@ -5827,6 +5833,9 @@ namespace sf_sample.Droid
 			
 			// aapt resource value: 0x7f0200ad
 			public const int textbox = 2130837677;
+			
+			// aapt resource value: 0x7f0200ae
+			public const int updownbuttons = 2130837678;
 			
 			static Drawable()
 			{
@@ -6652,11 +6661,11 @@ namespace sf_sample.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f080027
-			public const int ApplicationName = 2131230759;
+			// aapt resource value: 0x7f080028
+			public const int ApplicationName = 2131230760;
 			
-			// aapt resource value: 0x7f080026
-			public const int Hello = 2131230758;
+			// aapt resource value: 0x7f080027
+			public const int Hello = 2131230759;
 			
 			// aapt resource value: 0x7f08000f
 			public const int abc_action_bar_home_description = 2131230735;
@@ -6715,6 +6724,9 @@ namespace sf_sample.Droid
 			// aapt resource value: 0x7f080021
 			public const int abc_toolbar_collapse_description = 2131230753;
 			
+			// aapt resource value: 0x7f080026
+			public const int app_name = 2131230758;
+			
 			// aapt resource value: 0x7f080023
 			public const int appbar_scrolling_view_behavior = 2131230755;
 			
@@ -6724,8 +6736,8 @@ namespace sf_sample.Droid
 			// aapt resource value: 0x7f080025
 			public const int character_counter_pattern = 2131230757;
 			
-			// aapt resource value: 0x7f080028
-			public const int library_name = 2131230760;
+			// aapt resource value: 0x7f080029
+			public const int library_name = 2131230761;
 			
 			// aapt resource value: 0x7f080000
 			public const int mr_button_content_description = 2131230720;
@@ -6772,32 +6784,32 @@ namespace sf_sample.Droid
 			// aapt resource value: 0x7f08000e
 			public const int mr_user_route_category_name = 2131230734;
 			
-			// aapt resource value: 0x7f080029
-			public const int q = 2131230761;
-			
 			// aapt resource value: 0x7f08002a
-			public const int quarter = 2131230762;
+			public const int q = 2131230762;
 			
 			// aapt resource value: 0x7f08002b
-			public const int sfchart_close_label = 2131230763;
+			public const int quarter = 2131230763;
 			
 			// aapt resource value: 0x7f08002c
-			public const int sfchart_high_label = 2131230764;
+			public const int sfchart_close_label = 2131230764;
 			
 			// aapt resource value: 0x7f08002d
-			public const int sfchart_low_label = 2131230765;
+			public const int sfchart_high_label = 2131230765;
 			
 			// aapt resource value: 0x7f08002e
-			public const int sfchart_open_label = 2131230766;
+			public const int sfchart_low_label = 2131230766;
+			
+			// aapt resource value: 0x7f08002f
+			public const int sfchart_open_label = 2131230767;
 			
 			// aapt resource value: 0x7f080022
 			public const int status_bar_notification_info_overflow = 2131230754;
 			
-			// aapt resource value: 0x7f08002f
-			public const int w = 2131230767;
-			
 			// aapt resource value: 0x7f080030
-			public const int week = 2131230768;
+			public const int w = 2131230768;
+			
+			// aapt resource value: 0x7f080031
+			public const int week = 2131230769;
 			
 			static String()
 			{

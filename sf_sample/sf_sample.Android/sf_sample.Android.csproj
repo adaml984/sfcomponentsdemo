@@ -145,6 +145,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.SfNumericUpDown.Android">
+      <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfNumericUpDown.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfNumericUpDown.XForms.Android">
+      <HintPath>..\..\libs\syncfusion\android\Syncfusion.SfNumericUpDown.XForms.Android.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

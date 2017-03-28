@@ -5,11 +5,11 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:popups="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
                   xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
                   mvvm:ViewModelLocator.AutowireViewModel="True"
-                  Padding="25"
                   x:Class="sf_sample.Views.Popups.AutoCompleteConfigPopupView">
-    <StackLayout VerticalOptions="Center"
-                 HorizontalOptions="Center"
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand"
                  Padding="0"
                  Margin="0">
         <Frame Margin="0"
@@ -19,14 +19,12 @@
                          Margin="2"
                          BackgroundColor="White"
                          Orientation="Vertical">
-                <Label Text="To jest konfiguracja" />
-                <Label Text="To jest konfiguracja2" />
-                <Label Text="To jest konfiguracja3" />
-                <Label Text="To jest konfiguracja4" />
-                <Label Text="To jest konfiguracja5" />
-                <Label Text="To jest konfiguracja6" />
-                <Label Text="To jest konfiguracja7" />
-                <Label Text="To jest konfiguracja8" />
+                <Label Text="MinimumPrefixCharacters" />
+                <numeric:SfNumericUpDown AllowNull="False" StepValue="1" TextAlignment="Center" Value="{Binding MinimumPrefixCharacters}" SpinButtonAlignment="Both" />
+                <Label Text="SuggestionMode" />
+                <Picker x:Name="suggestionModePicker" WidthRequest="250"/>
+                <Label Text="AutoCompleteMode" />
+                <Picker x:Name="autocompleteModePicker" WidthRequest="250"/>
             </StackLayout>
         </Frame>
     </StackLayout>

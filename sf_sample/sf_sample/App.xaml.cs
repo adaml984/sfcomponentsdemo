@@ -1,7 +1,7 @@
 ﻿using Microsoft.Practices.Unity;
 using Prism.Unity;
 using sf_sample.Helpers;
-using sf_sample.ViewModels;
+using sf_sample.ViewModels.Popups;
 using sf_sample.Views;
 using sf_sample.Views.Popups;
 

@@ -38,7 +38,7 @@ namespace sf_sample.CustomComponents
                 var image = s as ClickableImage;
                 if (image == null)
                     return;
-                image.Opacity = 0.2;
+                image.Opacity = 0.5;
                 await Task.Delay(200);
                 image.Opacity = 1;
             };
